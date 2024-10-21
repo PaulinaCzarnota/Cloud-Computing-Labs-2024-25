@@ -1,6 +1,6 @@
 This repository contains a collection of labs completed for the Cloud Computing module during my third year of Computer Science at TU Dublin.
 
-# Lab Summaries
+## Lab Summaries
 
 **Lab 1**
 
