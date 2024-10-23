@@ -27,4 +27,3 @@ In this lab, I explored the practical aspects of virtualization using Oracle VM 
 8. **Direct Backup**: I conducted a direct backup of the VM to an external drive, ensuring quick access and storage.
 
 9. **Adding Existing VM**: I demonstrated the process of adding an existing VM from an external storage device, emphasizing quick VM deployment.
-
