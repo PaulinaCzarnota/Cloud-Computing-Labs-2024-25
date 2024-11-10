@@ -32,7 +32,7 @@ In this lab, I explored the practical aspects of virtualization using Oracle VM 
 
 In **Lab 4**, I explored various Google Cloud tools and services, gaining hands-on experience in managing resources, creating virtual machines (VMs), working with persistent disks, configuring network rules, and interacting with Google Cloud APIs. Below is a detailed summary of what I did in each part of the lab:
 
-## Part 1: Introduction to Google Cloud and Virtual Machines
+#### Part 1: Introduction to Google Cloud and Virtual Machines
 
 In **Part 1**, I learned the fundamentals of setting up Google Cloud resources and managing them using the Google Cloud Console and Cloud Shell. The primary focus was on creating and configuring virtual machines (VMs). Here’s what I did:
 
@@ -44,7 +44,7 @@ In **Part 1**, I learned the fundamentals of setting up Google Cloud resources a
 
 Through this part, I gained hands-on experience in managing VMs, installing software on them, and securing them with appropriate firewall rules.
 
-## Part 2: Networking and Firewall Rules
+#### Part 2: Networking and Firewall Rules
 
 In **Part 2**, I focused on Google Cloud networking and firewall rules, which are essential for controlling access to resources. The tasks I completed included:
 
@@ -54,7 +54,7 @@ In **Part 2**, I focused on Google Cloud networking and firewall rules, which ar
 
 This part of the lab gave me a solid understanding of networking in Google Cloud and how to use firewall rules to secure my cloud resources effectively.
 
-## Part 3: Creating a Persistent Disk
+#### Part 3: Creating a Persistent Disk
 
 **Part 3** was focused on using Google Cloud's persistent disks, which provide durable and high-performance storage that remains intact even after a VM is stopped or restarted. Here’s what I did:
 
@@ -65,7 +65,7 @@ This part of the lab gave me a solid understanding of networking in Google Cloud
 
 Through this task, I learned how to manage persistent storage in Google Cloud, a crucial skill for working with stateful applications.
 
-## Part 4: Getting Started with Cloud Shell and gcloud
+#### Part 4: Getting Started with Cloud Shell and gcloud
 
 In **Part 4**, I was introduced to Cloud Shell and the `gcloud` command-line tool, which are essential for managing Google Cloud resources. I learned how to interact with Google Cloud programmatically and automate tasks. Here’s a breakdown of what I did:
 
@@ -77,7 +77,7 @@ In **Part 4**, I was introduced to Cloud Shell and the `gcloud` command-line too
 
 This part helped me become comfortable with using Cloud Shell and the `gcloud` CLI, which are indispensable tools for managing Google Cloud resources efficiently.
 
-## Part 5: Introduction to APIs in Google Cloud
+#### Part 5: Introduction to APIs in Google Cloud
 
 **Part 5** introduced me to working with Google Cloud APIs, specifically the Cloud Storage REST API. I gained experience interacting with Google Cloud services programmatically and automating tasks. The tasks I performed included:
 
@@ -88,9 +88,3 @@ This part helped me become comfortable with using Cloud Shell and the `gcloud` C
 - **Uploading Files to Cloud Storage**: I uploaded a file (such as an image) to the Cloud Storage bucket using the `curl` command. After uploading, I verified the upload by checking the response JSON, which included metadata about the uploaded file.
 
 Through this part, I learned how to interact with Google Cloud services programmatically using APIs. I gained valuable experience in using authentication methods, making API calls, and automating cloud tasks.
-
-
-These hands-on experiences provided me with essential skills for managing Google Cloud resources and automating workflows. I now have a solid foundation in using Google Cloud for deploying, managing, and securing applications and infrastructure.
-```
-
-This version uses "I" in a more personal and reflective tone, detailing everything I learned and did in each part of the lab. Each task is connected to the practical skills I gained while working through the exercises.
