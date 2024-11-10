@@ -1,104 +1,99 @@
 This repository contains a collection of labs completed for the Cloud Computing module during my third year of Computer Science at TU Dublin.
- 
+
 # Lab Summaries
 
-### Lab 1
+### Lab 1: Google Cloud Shell and Linux Command Line Basics
 
-This lab focuses on using Google Cloud Shell to explore essential Linux command-line skills. It covers file creation and management, modifying file permissions, manipulating text files, and managing system processes. Key commands include chmod, grep, sort, and ps, providing a foundation for efficient cloud-based system administration.
+This lab focuses on using Google Cloud Shell to explore essential Linux command-line skills. It covers file creation and management, modifying file permissions, manipulating text files, and managing system processes. Key commands include `chmod`, `grep`, `sort`, and `ps`, providing a foundation for efficient cloud-based system administration.
 
-### Lab 2
+### Lab 2: Virtualization with Oracle VM VirtualBox
 
-In this lab, I explored the practical aspects of virtualization using Oracle VM VirtualBox, focusing on creating and managing a virtual machine (VM) running Ubuntu Linux. The activities I undertook included:
+In this lab, I explored virtualization using Oracle VM VirtualBox, focusing on creating and managing a virtual machine (VM) running Ubuntu Linux. Key activities included:
 
-1. **Creating a New Virtual Machine**: I set up a VM configured to run Ubuntu Linux, specifying system resources based on my host machine's capabilities.
+1. **Creating a New Virtual Machine**: Set up a VM configured to run Ubuntu Linux.
+2. **Boot Configuration**: Configured the VM to boot from a virtual Linux CD.
+3. **Shared Folder Setup**: Established a shared folder between the host and guest VM.
+4. **Ubuntu Installation**: Installed the Ubuntu OS and configured user accounts.
+5. **Guest Additions Installation**: Enhanced VM performance and integration.
+6. **Exporting the VM**: Exported the VM as an OVA file for portability.
+7. **Importing a VM**: Practiced importing an OVA file into VirtualBox.
+8. **Direct Backup**: Backed up the VM to an external drive.
+9. **Adding Existing VM**: Demonstrated adding an existing VM from external storage.
 
-2. **Boot Configuration**: I configured the VM to boot from a virtual Linux CD by attaching the Ubuntu ISO file to the virtual CD-ROM.
-
-3. **Shared Folder Setup**: I established a shared folder between my host and the guest VM to facilitate file transfer.
-
-4. **Ubuntu Installation**: I installed the Ubuntu operating system in the VM, configuring user accounts and system settings as part of the process.
-
-5. **Guest Additions Installation**: I installed Oracle VM Guest Additions to enhance the performance and integration of the VM with the host system.
-
-6. **Exporting the VM**: I exported the configured VM as an OVA file for portability and ease of use on different systems.
-
-7. **Importing a VM**: I practiced importing an existing OVA file into VirtualBox, showcasing the simplicity of managing virtual appliances.
-
-8. **Direct Backup**: I conducted a direct backup of the VM to an external drive, ensuring quick access and storage.
-
-9. **Adding Existing VM**: I demonstrated the process of adding an existing VM from an external storage device, emphasizing quick VM deployment.
-
-### Lab 4
-
-In Lab 4, I explored various Google Cloud tools and services, gaining hands-on experience in managing resources, creating virtual machines (VMs), working with persistent disks, configuring network rules, and interacting with Google Cloud APIs. Below is a detailed summary of what I did in each part of the lab:
+### Lab 4: Google Cloud Resource Management
 
 #### Part 1: Introduction to Google Cloud and Virtual Machines
 
-In Part 1, I learned the fundamentals of setting up Google Cloud resources and managing them using the Google Cloud Console and Cloud Shell. The primary focus was on creating and configuring virtual machines (VMs). Here’s what I did:
+This part introduced setting up and managing Google Cloud resources, particularly virtual machines (VMs), including:
 
-- **Navigating the Google Cloud Console**: I accessed the Google Cloud Console, which allowed me to manage cloud resources such as Compute Engine, Networking, and Cloud Storage. This gave me a high-level understanding of how Google Cloud organizes and manages resources.
-- **Creating a Virtual Machine**: I used the `gcloud` command-line tool to create a virtual machine, specifying machine types, regions, and zones. This task helped me understand how to deploy VMs in Google Cloud and how to choose the right configuration for specific use cases.
-- **Connecting to the VM via SSH**: After creating the VM, I connected to it using the `gcloud compute ssh` command. This gave me the opportunity to remotely manage the VM and perform administrative tasks.
-- **Installing Nginx**: I installed Nginx on the VM to set up a basic web server. I verified that the server was running by accessing the public IP address of the VM and ensuring that the default Nginx landing page was displayed.
-- **Configuring Firewall Rules**: I created custom firewall rules to allow HTTP (port 80) and HTTPS (port 443) traffic to the VM, ensuring that the web server was accessible from the internet. This step was crucial in learning how to control traffic to cloud resources.
-
-Through this part, I gained hands-on experience in managing VMs, installing software on them, and securing them with appropriate firewall rules.
+- **Google Cloud Console**: Managed cloud resources such as Compute Engine, Networking, and Storage.
+- **Creating a Virtual Machine**: Used `gcloud` to configure and deploy VMs.
+- **SSH Access and Nginx Installation**: Connected to the VM via SSH and installed Nginx for a basic web server.
+- **Firewall Rules Configuration**: Set custom rules to allow HTTP/HTTPS traffic.
 
 #### Part 2: Networking and Firewall Rules
 
-In Part 2, I focused on Google Cloud networking and firewall rules, which are essential for controlling access to resources. The tasks I completed included:
+Explored networking and firewall rules for access control:
 
-- **Creating a Virtual Private Cloud (VPC)**: I created a Virtual Private Cloud (VPC), which is Google Cloud's isolated network environment. This was a critical first step in understanding how networking works in Google Cloud and how resources are isolated within a VPC.
-- **Configuring Firewall Rules**: I created custom firewall rules that allowed or blocked traffic to the VM based on specific ports, IP ranges, and protocols. This task helped me understand how to secure resources and control traffic flow into and out of a VPC.
-- **Securing Google Cloud Resources**: I ensured that only necessary traffic (e.g., HTTP and SSH) could reach my VM, blocking other types of unwanted traffic. By configuring firewall rules, I learned how to apply security best practices, such as limiting the sources that can access the VM.
+- **Virtual Private Cloud (VPC)**: Created a VPC for isolated networking.
+- **Firewall Rules**: Configured rules to control inbound and outbound traffic.
 
-This part of the lab gave me a solid understanding of networking in Google Cloud and how to use firewall rules to secure my cloud resources effectively.
+#### Part 3: Persistent Disk Management
 
-#### Part 3: Creating a Persistent Disk
+Learned how to create and manage persistent disks:
 
-Part 3 was focused on using Google Cloud's persistent disks, which provide durable and high-performance storage that remains intact even after a VM is stopped or restarted. Here’s what I did:
+- **Disk Creation**: Created a persistent disk and attached it to a VM.
+- **Formatting and Mounting**: Formatted and mounted the disk in the VM.
+- **Auto-Mount Configuration**: Ensured the disk remounted on VM reboot.
 
-- **Creating a Persistent Disk**: I created a new persistent disk using the `gcloud compute disks create` command. This disk was attached to the VM, enabling me to store data separately from the VM’s root disk.
-- **Formatting and Mounting the Disk**: After attaching the disk to the VM, I formatted it and mounted it into the VM's file system using Linux commands. This step helped me understand how to manage additional storage for VMs.
-- **Configuring Auto-Mount**: I configured the disk to automatically remount when the VM is rebooted. This ensured that the data stored on the persistent disk remained accessible after VM restarts.
-- **Testing Disk Functionality**: To verify that the disk was properly configured, I stored files on it and accessed them. This confirmed that the disk was functioning as expected and provided persistent storage.
+#### Part 4: Cloud Shell and gcloud CLI
 
-Through this task, I learned how to manage persistent storage in Google Cloud, a crucial skill for working with stateful applications.
+Introduction to Cloud Shell and the `gcloud` CLI for managing Google Cloud resources:
 
-#### Part 4: Getting Started with Cloud Shell and gcloud
+- **Cloud Shell Setup**: Configured default regions, zones, and variables.
+- **Managing VMs with gcloud**: Created, managed, and connected to VMs via SSH.
+- **Firewall Rules and Verification**: Set and tested firewall rules.
 
-In Part 4, I was introduced to Cloud Shell and the `gcloud` command-line tool, which are essential for managing Google Cloud resources. I learned how to interact with Google Cloud programmatically and automate tasks. Here’s a breakdown of what I did:
+#### Part 5: Google Cloud APIs
 
-- **Using Cloud Shell**: I used Cloud Shell, a browser-based terminal that comes pre-configured with the `gcloud` CLI and other development tools. This allowed me to perform all lab tasks without needing to set up any software on my local machine.
-- **Setting Up Cloud Shell**: I configured Cloud Shell by setting default regions, zones, and environment variables. This setup streamlined future tasks and made working with cloud resources more efficient.
-- **Creating and Managing VMs**: Using `gcloud`, I created a virtual machine, connected to it via SSH, and installed Nginx. I also learned how to interact with the VM through the command line, which made it easy to automate processes and manage resources.
-- **Configuring Firewall Rules**: I added firewall rules using `gcloud` to allow HTTP traffic to the VM. This task demonstrated how to programmatically configure access to cloud resources.
-- **Verifying the Setup**: After configuring the firewall, I tested the setup by accessing the Nginx web server using `curl`. This confirmed that the VM was accessible and properly configured.
+Gained experience with Google Cloud APIs, focusing on Cloud Storage:
 
-This part helped me become comfortable with using Cloud Shell and the `gcloud` CLI, which are indispensable tools for managing Google Cloud resources efficiently.
+- **API Enabling and OAuth Authentication**: Enabled APIs and authenticated with OAuth.
+- **API Calls**: Created a Cloud Storage bucket and uploaded files programmatically.
 
-#### Part 5: Introduction to APIs in Google Cloud
+### Lab 5: Docker Basics
 
-Part 5 introduced me to working with Google Cloud APIs, specifically the Cloud Storage REST API. I gained experience interacting with Google Cloud services programmatically and automating tasks. The tasks I performed included:
+In this lab, I explored Docker containerization, covering topics like:
 
-- **Enabling the Google Fitness API**: I enabled the Google Fitness API from the Google Cloud API Library. This was my first experience with enabling and using an API in Google Cloud.
-- **Creating JSON Files for API Requests**: I created a `values.json` file that contained configuration data for creating a Cloud Storage bucket. The JSON file included the bucket’s name, location, and storage class. This file was used to automate API requests.
-- **OAuth 2.0 Authentication**: I generated an OAuth 2.0 token using the OAuth 2.0 Playground. This token was used to authenticate API requests to Google Cloud services. This part taught me how to securely authenticate and authorize API calls using OAuth.
-- **Creating a Cloud Storage Bucket**: I used the `curl` command to make a POST request to the Cloud Storage API, which created a new storage bucket based on the configuration in the `values.json` file. I then verified the bucket creation by inspecting the JSON response.
-- **Uploading Files to Cloud Storage**: I uploaded a file (such as an image) to the Cloud Storage bucket using the `curl` command. After uploading, I verified the upload by checking the response JSON, which included metadata about the uploaded file.
+- **Running Containerized Applications**: Launched applications inside containers.
+- **Creating Docker Images**: Used Dockerfiles to define container environments.
+- **Volume Management**: Persisted data outside containers.
+- **Port Mapping**: Exposed services by mapping ports.
+- **Image Sharing**: Published images on Docker Hub.
 
-Through this part, I learned how to interact with Google Cloud services programmatically using APIs. I gained valuable experience in using authentication methods, making API calls, and automating cloud tasks.
+This lab was based on Part 1 of the "DevOps with Docker" course from the University of Helsinki, completed in Google Cloud Shell.
 
-### Lab 5
+### Lab 8: Load Balancers, API Gateway, Pub/Sub, and Cloud Run Functions
 
-In Week 5's lab session, I explored the basics of Docker containerization. The main focus was on creating, running, and distributing Docker containers, which provide a lightweight and portable environment for applications. By the end of the session, I gained hands-on experience in:
+#### Part 1: Set Up Network and Application Load Balancers
 
-- **Running containerized applications**: Learning how to launch applications inside containers.
-- **Creating containerized applications**: Writing Dockerfiles to define container environments.
-- **Using Docker volumes**: Storing data persistently outside containers, making it independent of the container lifecycle.
-- **Port mapping**: Exposing containerized services via TCP by mapping internal container ports to host machine ports.
-- **Sharing containers publicly**: Pushing container images to Docker Hub for easy distribution.
+This part introduced Network and Application Load Balancers in Google Cloud.
 
-I worked through Part 1 of the "DevOps with Docker" course from the University of Helsinki, using Google Cloud Shell as my primary environment for executing commands and building containers.
+1. **Default Region and Zone Setup**: Configured defaults for efficient deployment.
+2. **Web Server Instances Creation**: Deployed three VMs running Apache.
+3. **Network Load Balancer (NLB) Configuration**: Set up NLB with target pools, health checks, and forwarding rules.
+4. **Testing NLB**: Verified load balancing across VMs using `curl`.
+5. **Application Load Balancer (ALB) Setup**: Created ALB with backend services and content-based routing.
 
-The lab contained 16 exercises spread across 8 sections. These exercises helped strengthen my understanding of Docker’s capabilities, from basic image creation to more advanced tasks like port mapping and Docker Hub integration.
+#### Part 2: API Gateway, Pub/Sub, and Cloud Run Functions
+
+Worked with API Gateway, Pub/Sub, and Cloud Run Functions to deploy and manage secure APIs and handle serverless functions:
+
+1. **Deploying an API Backend**: Deployed a backend API secured through API Gateway.
+2. **Creating and Configuring API Gateway**: Set up routing and security using API keys.
+3. **Securing API Access**: Controlled access to the API with API keys.
+4. **Deploying API Config**: Updated API configuration without affecting public access.
+5. **Testing API Calls**: Verified API functionality and security with API keys.
+6. **Setting up Pub/Sub**: Established Pub/Sub for real-time messaging between services.
+7. **Creating and Deploying Cloud Functions**: Created and tested Cloud Run functions for event-driven responses.
+8. **Challenge Lab**: Applied skills to create a Cloud Function, API Gateway, and Pub/Sub integration.
