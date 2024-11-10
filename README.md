@@ -88,3 +88,17 @@ Part 5 introduced me to working with Google Cloud APIs, specifically the Cloud S
 - **Uploading Files to Cloud Storage**: I uploaded a file (such as an image) to the Cloud Storage bucket using the `curl` command. After uploading, I verified the upload by checking the response JSON, which included metadata about the uploaded file.
 
 Through this part, I learned how to interact with Google Cloud services programmatically using APIs. I gained valuable experience in using authentication methods, making API calls, and automating cloud tasks.
+
+### Lab 5
+
+In Week 5's lab session, I explored the basics of Docker containerization. The main focus was on creating, running, and distributing Docker containers, which provide a lightweight and portable environment for applications. By the end of the session, I gained hands-on experience in:
+
+- **Running containerized applications**: Learning how to launch applications inside containers.
+- **Creating containerized applications**: Writing Dockerfiles to define container environments.
+- **Using Docker volumes**: Storing data persistently outside containers, making it independent of the container lifecycle.
+- **Port mapping**: Exposing containerized services via TCP by mapping internal container ports to host machine ports.
+- **Sharing containers publicly**: Pushing container images to Docker Hub for easy distribution.
+
+I worked through Part 1 of the "DevOps with Docker" course from the University of Helsinki, using **Google Cloud Shell** as my primary environment for executing commands and building containers.
+
+The lab contained 16 exercises spread across 8 sections. These exercises helped strengthen my understanding of Docker’s capabilities, from basic image creation to more advanced tasks like port mapping and Docker Hub integration.
