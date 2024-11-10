@@ -30,11 +30,11 @@ In this lab, I explored the practical aspects of virtualization using Oracle VM 
 
 ### Lab 4
 
-In **Lab 4**, I explored various Google Cloud tools and services, gaining hands-on experience in managing resources, creating virtual machines (VMs), working with persistent disks, configuring network rules, and interacting with Google Cloud APIs. Below is a detailed summary of what I did in each part of the lab:
+In Lab 4, I explored various Google Cloud tools and services, gaining hands-on experience in managing resources, creating virtual machines (VMs), working with persistent disks, configuring network rules, and interacting with Google Cloud APIs. Below is a detailed summary of what I did in each part of the lab:
 
 #### Part 1: Introduction to Google Cloud and Virtual Machines
 
-In **Part 1**, I learned the fundamentals of setting up Google Cloud resources and managing them using the Google Cloud Console and Cloud Shell. The primary focus was on creating and configuring virtual machines (VMs). Here’s what I did:
+In Part 1, I learned the fundamentals of setting up Google Cloud resources and managing them using the Google Cloud Console and Cloud Shell. The primary focus was on creating and configuring virtual machines (VMs). Here’s what I did:
 
 - **Navigating the Google Cloud Console**: I accessed the Google Cloud Console, which allowed me to manage cloud resources such as Compute Engine, Networking, and Cloud Storage. This gave me a high-level understanding of how Google Cloud organizes and manages resources.
 - **Creating a Virtual Machine**: I used the `gcloud` command-line tool to create a virtual machine, specifying machine types, regions, and zones. This task helped me understand how to deploy VMs in Google Cloud and how to choose the right configuration for specific use cases.
@@ -46,7 +46,7 @@ Through this part, I gained hands-on experience in managing VMs, installing soft
 
 #### Part 2: Networking and Firewall Rules
 
-In **Part 2**, I focused on Google Cloud networking and firewall rules, which are essential for controlling access to resources. The tasks I completed included:
+In Part 2, I focused on Google Cloud networking and firewall rules, which are essential for controlling access to resources. The tasks I completed included:
 
 - **Creating a Virtual Private Cloud (VPC)**: I created a Virtual Private Cloud (VPC), which is Google Cloud's isolated network environment. This was a critical first step in understanding how networking works in Google Cloud and how resources are isolated within a VPC.
 - **Configuring Firewall Rules**: I created custom firewall rules that allowed or blocked traffic to the VM based on specific ports, IP ranges, and protocols. This task helped me understand how to secure resources and control traffic flow into and out of a VPC.
@@ -56,7 +56,7 @@ This part of the lab gave me a solid understanding of networking in Google Cloud
 
 #### Part 3: Creating a Persistent Disk
 
-**Part 3** was focused on using Google Cloud's persistent disks, which provide durable and high-performance storage that remains intact even after a VM is stopped or restarted. Here’s what I did:
+Part 3 was focused on using Google Cloud's persistent disks, which provide durable and high-performance storage that remains intact even after a VM is stopped or restarted. Here’s what I did:
 
 - **Creating a Persistent Disk**: I created a new persistent disk using the `gcloud compute disks create` command. This disk was attached to the VM, enabling me to store data separately from the VM’s root disk.
 - **Formatting and Mounting the Disk**: After attaching the disk to the VM, I formatted it and mounted it into the VM's file system using Linux commands. This step helped me understand how to manage additional storage for VMs.
@@ -67,7 +67,7 @@ Through this task, I learned how to manage persistent storage in Google Cloud, a
 
 #### Part 4: Getting Started with Cloud Shell and gcloud
 
-In **Part 4**, I was introduced to Cloud Shell and the `gcloud` command-line tool, which are essential for managing Google Cloud resources. I learned how to interact with Google Cloud programmatically and automate tasks. Here’s a breakdown of what I did:
+In Part 4, I was introduced to Cloud Shell and the `gcloud` command-line tool, which are essential for managing Google Cloud resources. I learned how to interact with Google Cloud programmatically and automate tasks. Here’s a breakdown of what I did:
 
 - **Using Cloud Shell**: I used Cloud Shell, a browser-based terminal that comes pre-configured with the `gcloud` CLI and other development tools. This allowed me to perform all lab tasks without needing to set up any software on my local machine.
 - **Setting Up Cloud Shell**: I configured Cloud Shell by setting default regions, zones, and environment variables. This setup streamlined future tasks and made working with cloud resources more efficient.
@@ -79,9 +79,9 @@ This part helped me become comfortable with using Cloud Shell and the `gcloud` C
 
 #### Part 5: Introduction to APIs in Google Cloud
 
-**Part 5** introduced me to working with Google Cloud APIs, specifically the Cloud Storage REST API. I gained experience interacting with Google Cloud services programmatically and automating tasks. The tasks I performed included:
+Part 5 introduced me to working with Google Cloud APIs, specifically the Cloud Storage REST API. I gained experience interacting with Google Cloud services programmatically and automating tasks. The tasks I performed included:
 
-- **Enabling the Google Fitness API**: I enabled the **Google Fitness API** from the Google Cloud API Library. This was my first experience with enabling and using an API in Google Cloud.
+- **Enabling the Google Fitness API**: I enabled the Google Fitness API from the Google Cloud API Library. This was my first experience with enabling and using an API in Google Cloud.
 - **Creating JSON Files for API Requests**: I created a `values.json` file that contained configuration data for creating a Cloud Storage bucket. The JSON file included the bucket’s name, location, and storage class. This file was used to automate API requests.
 - **OAuth 2.0 Authentication**: I generated an OAuth 2.0 token using the OAuth 2.0 Playground. This token was used to authenticate API requests to Google Cloud services. This part taught me how to securely authenticate and authorize API calls using OAuth.
 - **Creating a Cloud Storage Bucket**: I used the `curl` command to make a POST request to the Cloud Storage API, which created a new storage bucket based on the configuration in the `values.json` file. I then verified the bucket creation by inspecting the JSON response.
