@@ -99,6 +99,6 @@ In Week 5's lab session, I explored the basics of Docker containerization. The m
 - **Port mapping**: Exposing containerized services via TCP by mapping internal container ports to host machine ports.
 - **Sharing containers publicly**: Pushing container images to Docker Hub for easy distribution.
 
-I worked through Part 1 of the "DevOps with Docker" course from the University of Helsinki, using **Google Cloud Shell** as my primary environment for executing commands and building containers.
+I worked through Part 1 of the "DevOps with Docker" course from the University of Helsinki, using Google Cloud Shell as my primary environment for executing commands and building containers.
 
 The lab contained 16 exercises spread across 8 sections. These exercises helped strengthen my understanding of Docker’s capabilities, from basic image creation to more advanced tasks like port mapping and Docker Hub integration.
