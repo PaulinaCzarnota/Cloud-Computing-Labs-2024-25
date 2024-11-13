@@ -97,3 +97,38 @@ Worked with API Gateway, Pub/Sub, and Cloud Run Functions to deploy and manage s
 6. **Setting up Pub/Sub**: Established Pub/Sub for real-time messaging between services.
 7. **Creating and Deploying Cloud Functions**: Created and tested Cloud Run functions for event-driven responses.
 8. **Challenge Lab**: Applied skills to create a Cloud Function, API Gateway, and Pub/Sub integration.
+
+### Lab 7: Google Cloud IAM Custom Roles, Firestore Migration, and Pub/Sub Messaging
+
+#### Part 1: IAM Custom Roles and Permissions Management
+
+In this part, I explored Google Cloud IAM by creating and managing custom roles to fine-tune access control for cloud resources:
+
+1. **Creating a Custom Role**: Defined a custom IAM role with permissions specifically for interacting with a Cloud Storage bucket, focusing on principles of least privilege.
+2. **Assigning the Custom Role**: Assigned the role to a test user, allowing for controlled access to bucket data while limiting actions outside of the assigned permissions.
+3. **Testing Role Permissions**: Verified access by testing read and write operations and ensuring the role met all security requirements.
+4. **Revoking Access**: Removed the custom role to confirm that only authorized users with assigned roles could access resources, reinforcing IAM’s role-based access control.
+
+This task provided valuable experience in implementing principle-based access management on Google Cloud and utilizing IAM for secure role assignments.
+
+#### Part 2: Firestore Data Migration
+
+This part focused on migrating customer data to Firestore, showcasing Firestore as a scalable, NoSQL cloud database for real-time data handling:
+
+1. **Firestore Setup**: Configured Firestore in Datastore mode to leverage its document-oriented storage and transaction capabilities, suitable for handling structured customer data.
+2. **Data Import Code**: Developed and executed code to automate the data migration process from legacy formats, ensuring efficient and accurate data transfer to Firestore.
+3. **Creating Test Data**: Created sample customer data in the local environment to simulate real-world scenarios and verify the migration code’s accuracy.
+4. **Verifying Data Import**: Checked the migrated data in Firestore to ensure consistency and integrity, demonstrating Firestore’s ability to manage and scale application data.
+
+This task highlighted the steps for successful data migration and Firestore’s role in modernizing data storage for high-availability applications.
+
+#### Part 3: Pub/Sub Basics and Message Handling
+
+In this part, I explored the Google Cloud Pub/Sub messaging service to handle asynchronous communication and event streaming between services:
+
+1. **Creating Topics and Subscriptions**: Set up topics for publishing messages and subscriptions for message retrieval, demonstrating Pub/Sub’s support for decoupled architecture.
+2. **Publishing Messages**: Published multiple custom messages to a topic, representing various event types, simulating real-time event data streaming in a microservices environment.
+3. **Pulling and Processing Messages**: Configured a pull subscription to retrieve and auto-acknowledge messages from the topic. Learned how Pub/Sub ensures reliable message delivery, even in scenarios with multiple subscribers.
+4. **Batch Pulling and Testing**: Utilized the `--limit` flag to retrieve multiple messages simultaneously, exploring options for efficient message processing and scalability in data pipelines.
+
+This part illustrated the use of Pub/Sub for building flexible, asynchronous systems, enhancing the understanding of event-driven architecture and reliable messaging in distributed cloud applications.
