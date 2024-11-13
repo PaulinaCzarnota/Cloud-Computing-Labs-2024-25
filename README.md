@@ -73,7 +73,7 @@ In this lab, I explored Docker containerization, covering topics like:
 
 This lab was based on Part 1 of the "DevOps with Docker" course from the University of Helsinki, completed in Google Cloud Shell.
 
-### Lab 8: Load Balancers, API Gateway, Pub/Sub, and Cloud Run Functions
+### Lab 6: Load Balancers, API Gateway, Pub/Sub, and Cloud Run Functions
 
 #### Part 1: Set Up Network and Application Load Balancers
 
