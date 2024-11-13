@@ -20,6 +20,18 @@ In this lab, I explored virtualization using Oracle VM VirtualBox, focusing on c
 8. **Direct Backup**: Backed up the VM to an external drive.
 9. **Adding Existing VM**: Demonstrated adding an existing VM from external storage.
 
+### Lab 3: Network Attached Storage (NAS) and RAID with FreeNAS in Oracle VirtualBox
+
+This lab involved setting up FreeNAS in a virtual machine using Oracle VirtualBox to explore Network Attached Storage (NAS) and RAID technology. Tasks included:
+
+1. **Installing FreeNAS**: Set up FreeNAS on a VM.
+2. **Creating Storage Volumes**: Configured storage volumes and RAID arrays for redundancy.
+3. **Setting Up Network Shares**: Enabled file sharing with SMB, NFS, and iSCSI.
+4. **Configuring RAID**: Implemented RAID 1 and RAID 5 for fault tolerance.
+5. **Testing**: Verified access to storage from client systems.
+
+This lab provided practical experience in creating resilient storage solutions with FreeNAS and RAID in a virtualized environment.
+
 ### Lab 4: Google Cloud Resource Management
 
 #### Part 1: Introduction to Google Cloud and Virtual Machines
