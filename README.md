@@ -144,3 +144,37 @@ In this part, I explored the Google Cloud Pub/Sub messaging service to handle as
 4. **Batch Pulling and Testing**: Utilized the `--limit` flag to retrieve multiple messages simultaneously, exploring options for efficient message processing and scalability in data pipelines.
 
 This part illustrated the use of Pub/Sub for building flexible, asynchronous systems, enhancing the understanding of event-driven architecture and reliable messaging in distributed cloud applications.
+
+### Lab 8: Google Cloud Serverless Web App and Compute Engine Deployment
+
+#### Part 1: Build a Serverless Web App with Firebase
+This part focused on using Firebase to build and deploy a serverless web application, with features for real-time data management and user authentication.
+
+1. **Firebase Project Setup**: 
+   - Created a new Firebase project and linked it to Google Cloud.
+2. **Firebase Authentication**: 
+   - Implemented user sign-up and login with Firebase Authentication.
+3. **Firestore Database**: 
+   - Configured Firestore for storing and managing user data.
+4. **Firebase Hosting**: 
+   - Deployed the web app using Firebase Hosting for fast and secure access.
+5. **Testing**: 
+   - Verified user sign-up, login, and real-time data updates from Firestore.
+
+#### Part 2: Hosting a Web App on Google Cloud Using Compute Engine
+This part involved deploying a web application on Google Cloud using Compute Engine, with a focus on scalability, performance, and security.
+
+1. **Compute Engine VM Setup**: 
+   - Created virtual machine (VM) instances and installed a web server (Apache/Nginx) for hosting.
+2. **Managed Instance Groups (MIGs)**: 
+   - Configured MIGs for automatic scaling of VMs based on traffic.
+3. **Load Balancing**: 
+   - Set up an HTTP(S) Load Balancer to distribute traffic across VM instances.
+4. **Cloud CDN**: 
+   - Integrated Cloud CDN for faster content delivery and lower latency.
+5. **Security**: 
+   - Configured firewall rules and enabled HTTPS for secure connections.
+6. **Testing and Deployment**: 
+   - Deployed the web app and tested its performance under load.
+
+This lab provided hands-on experience in deploying serverless web apps using Firebase and traditional web apps using Compute Engine, with a focus on scalability and security.
