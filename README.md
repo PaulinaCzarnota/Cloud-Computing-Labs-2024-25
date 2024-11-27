@@ -178,3 +178,27 @@ This part involved deploying a web application on Google Cloud using Compute Eng
    - Deployed the web app and tested its performance under load.
 
 This lab provided hands-on experience in deploying serverless web apps using Firebase and traditional web apps using Compute Engine, with a focus on scalability and security.
+
+### Lab 9: Cloud Computing – Advanced Topics and Cloud Resource Management
+
+This lab focused on advanced Google Cloud services, covering VPC networking, IAM roles, event-driven functions, and Pub/Sub messaging for modern cloud architecture.
+
+#### Part 1: VPC Networking Fundamentals
+- Explored Google Cloud's Virtual Private Cloud (VPC) and networking concepts.
+- Created and managed custom VPC networks, subnets, and firewall rules.
+- Deployed virtual machines (VMs) and configured routes for traffic management.
+- Gained hands-on experience with network isolation, security, and resource management in Google Cloud.
+
+#### Part 2: Service Accounts and Roles: Fundamentals
+- Learned about Google Cloud IAM (Identity and Access Management) and service account management.
+- Created service accounts, assigned roles, and used them to access Cloud services like BigQuery.
+- Deployed a Compute Engine instance with a linked service account.
+- Applied IAM roles to ensure secure access control and tested permissions by querying BigQuery via Python.
+
+#### Part 3: Cloud Run Functions: Qwik Start – Command Line
+- Created a simple Cloud Run function that processes events triggered by a Pub/Sub topic.
+- Deployed the function with the `gcloud` CLI and tested its execution by publishing messages to the Pub/Sub topic.
+- Monitored function execution and viewed log outputs to ensure correct event handling.
+- Gained experience in serverless computing, event-driven architecture, and Cloud Run functions.
+
+This lab series provided hands-on experience with key Google Cloud services, focusing on networking, IAM roles, serverless functions, and event-driven computing, helping to solidify advanced cloud computing skills for scalable and secure applications.
